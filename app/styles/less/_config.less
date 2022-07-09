@@ -1,0 +1,24 @@
+// USER VARIABLES SECTION
+
+@accent: orange; // Accent Color
+@fontsize: 16px; // Body Font Size
+
+// IMPORT SECTION
+
+@import (less) "node_modules/bootstrap/dist/css/bootstrap-reboot.css"; // Bootstrap Reboot collection
+
+// FONTS LOAD SECTION
+
+.font(@fname, @fstyle, @fweight, @furl) {
+	@font-face {
+		font-family: @fname;
+		font-style: @fstyle;
+		font-weight: @fweight;
+		src: url(@furl) format("woff2");
+	}
+}
+
+.font("roboto-oh5", normal, 400, "../fonts/roboto-regular-webfont.woff2");
+.font("roboto-oh5", italic, 400, "../fonts/roboto-italic-webfont.woff2");
+.font("roboto-oh5", normal, 700, "../fonts/roboto-bold-webfont.woff2");
+.font("roboto-oh5", italic, 700, "../fonts/roboto-bolditalic-webfont.woff2");
