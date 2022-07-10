@@ -1,0 +1,38 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    .fontstyle ("Open-Sans", normal, 400);
+    text-transform: uppercase;
+
+}
+
+.nav__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    white-space: nowrap;
+}
+.nav__useful {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+}
+.nav__useful_lang {
+    .fontstyle ("Open-Sans", normal, 400);
+    text-transform: uppercase;
+    border: none;
+    display: inline-block;
+    appearance: none;
+    padding: 0 13px;
+    background: url(../../../images/dist/corner.svg) no-repeat;
+    background-position: 100% 54%;
+    cursor: pointer;
+    outline: none;
+}
+
+select option:active {
+    color:red;
+}
+
