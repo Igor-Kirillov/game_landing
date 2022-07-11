@@ -1,38 +1,70 @@
 .nav {
     display: flex;
     justify-content: space-between;
-    .fontstyle ("Open-Sans", normal, 400);
+    .fontsize (12px, 700, 16px);
     text-transform: uppercase;
-
+    padding: 22px 0 0 0;
+    margin-bottom: 238px;
+    letter-spacing: 0.1em;
+    &__main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+        white-space: nowrap;
+    }
+    &__useful {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 18px;
+    }
+    &__useful_lang {
+        text-transform: uppercase;
+        border: transparent;
+        border-right: 1px solid #ffffff;
+        appearance: none;
+        padding: 0 33px;
+        background: url(../../../images/dist/corner.svg) no-repeat;
+        background-position: 80% 54%;
+        cursor: pointer;
+        outline: none;
+        transition: background-position 0.3s ease;
+    }
 }
 
-.nav__main {
+.nav__useful_lang:hover {
+    background-position: 80% 74%;
+}
+
+.header__title {
+    .fontstyle("Bebas-Neue" sans-serif, normal);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 32px;
-    white-space: nowrap;
+    text-align: center;
+    gap: 29px;
 }
-.nav__useful {
+.header__title h1 {
+    margin: 0;
+    .fontsize (80px, 700, 80px);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    }
+.header__title h1 span {
+    display: block;
+    .fontsize (24px, 700, 24px);
+    letter-spacing: 2px;
+    padding-top: 8px;
+}
+
+.header__footer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 18px;
-}
-.nav__useful_lang {
-    .fontstyle ("Open-Sans", normal, 400);
+    .fontsize (12px, 700, 22px);
     text-transform: uppercase;
-    border: none;
-    display: inline-block;
-    appearance: none;
-    padding: 0 13px;
-    background: url(../../../images/dist/corner.svg) no-repeat;
-    background-position: 100% 54%;
-    cursor: pointer;
-    outline: none;
+    margin-bottom: 55px;
 }
-
-select option:active {
-    color:red;
-}
-

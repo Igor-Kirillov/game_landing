@@ -1,12 +1,24 @@
 .button {
-	.fontSize(40px, 400, 50px);
+	.fontstyle ("Open-Sans" sans-serif, normal);
+	.fontsize(16px, 700, 22px);
+	width: 260px;
+	height: 60px;
+	padding: 18px 18px 21px 17px;
+	color: #1A1917;
+	background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+	border: none;
+	border-radius: 4px;
+}
+.button--buy {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
+	margin-bottom: 364px;
 
-	padding: 4px 8px;
-	background-color: red;
-	color: white;
-
-	&--disabled {
-		background-color: gray;
-		cursor: not-allowed;
+	&--border {
+		border-right: 0.873968px solid #1A1917; 
+		transform: matrix(1, 0, 0.04, 1, 0, 0);
+		padding: 0 11px 0 0;
 	}
 }

@@ -1,13 +1,18 @@
 // GENERAL PROJECT STYLES
 
 body {
+    .fontstyle ("Open-Sans" sans-serif, normal);   
+    font-size: @fontsize;
     overflow: hidden;
     width: 100vw;
     height: 100vh;
     color: @main_color;
-    
+    background: url(../../../images/dist/image1.jpg) no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
 }
-
+a:hover,
+a:active,
 a {
     text-decoration: none;
     color: @main_color;
@@ -16,6 +21,7 @@ a {
 select {
     color: @main_color; 
 }
+
 select option{
     background-color: rgba(0, 0, 0, 0.75);
 }
@@ -23,11 +29,6 @@ select option{
 .container {
     margin: 0 auto;
     max-width: 1440px;
+    padding: 0 120px;
 }
 
-.header {
-    padding: 0 122px;
-    background-image: url(../../../images/dist/image1.jpg);
-    background-size: cover;
-    background-size: 100vw;
-}
