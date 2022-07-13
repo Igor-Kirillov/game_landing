@@ -1,22 +1,56 @@
-.about__title {
-    display: flex;
-    flex-direction: column;
-    .fontstyle("Bebas-Neue" sans-serif, normal);
-    max-width: 410px;   
-    padding-top: 180px;
+.title {
+    padding-top: 255px;
+    margin-bottom: 60px;
 }
-.about__title div {
-    .fontsize (24px, 700, 24px);
-    letter-spacing: 2px;
-} 
-.about__title h2 {
-    .fontsize (80px, 700, 80px);
-    letter-spacing: 3px;
-} 
-
 .about__about {
     .fontsize (18px, 400, 22px);
     text-align: justify;
     margin-left: 189px;
     max-width: 365px;
+    padding-bottom: 350px;
+}
+
+.about__about span {
+    text-decoration: underline @accent;
+}
+
+.about__slide1 {
+    position: absolute;
+    top: 188px;
+    right: 270px ;
+    z-index: 3;
+}
+.about__slide2 {
+    position: absolute;
+    top: 210px;
+    right: 230px;
+    z-index: 2;
+}
+.about__slide3 {
+    position: absolute;
+    top: 230px;
+    right: 185px;
+    z-index: 1;
+}
+
+.about__slider{
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    right: 310px;
+    top: 702px;
+    z-index: 5;
+}
+
+.about_line {
+    position: absolute;
+    top: 426px;
+    left: 120px;
+    z-index: 4;
+}
+
+.about__scroll {
+    position: absolute;
+    top: 475px;
+    right: 134px;
 }

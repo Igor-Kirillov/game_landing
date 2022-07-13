@@ -7,12 +7,17 @@ body {
     width: 100vw;
     height: 100vh;
     color: @main_color;
+    // background-color: black;
 }
 a:hover,
 a:active,
 a {
     text-decoration: none;
     color: @main_color;
+}
+
+p {
+    margin: 0;
 }
 
 select {
@@ -30,12 +35,23 @@ select option{
 
 .header {
     background: url(../../../images/dist/image1.jpg) no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     padding: 0 120px;
 
 }
+
 .about {
-    background: url(../../../images/dist/image2.jpg) no-repeat;
-    background-size: 100% 100%;
+    position: relative;
+    background-image: url(../../../images/dist/image2.jpg);
+    background-size: cover;
     padding: 0 120px;
+// url(../../../images/dist/slide1.jpg), url(../../../images/dist/slide2.jpg), url(../../../images/dist/slide3.jpg)
+}
+
+
+.features {
+    background: url(../../../images/dist/image3.jpg) no-repeat;
+    background-size: cover;
+    padding: 0 120px;
+
 }
