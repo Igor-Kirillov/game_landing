@@ -21,3 +21,34 @@
 .requirements__list__item--width {
     max-width: inherit;
 }
+
+.requirements__border__decorate {
+    position: relative;
+}
+
+.requirements__border__decorate::before {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    width: 50px;
+    height: 10px;
+    border: red;
+    left: 70px;
+    transform: skewX(-20deg);
+    border: 1px solid #979797;
+    border-right: none;
+    border-bottom: black;
+}
+.requirements__border__decorate::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    width: 40px;
+    height: 10px;
+    border: red;
+    left: 110px;
+    transform: skewX(20deg);
+    border: 1px solid #979797;
+    border-left: none;
+    border-bottom: black;
+}
