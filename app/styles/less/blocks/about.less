@@ -2,15 +2,17 @@
 .about__slide1 {
     position: absolute;
     top: 188px;
-    right: 270px ;
+    right: 270px;
     z-index: 3;
 }
+
 .about__slide2 {
     position: absolute;
     top: 210px;
     right: 230px;
     z-index: 2;
 }
+
 .about__slide3 {
     position: absolute;
     top: 230px;
@@ -36,7 +38,7 @@
     position: absolute;
     display: flex;
     justify-content: flex-end;
-    right: 438px;
+    right: 371px;
     top: 759px;
     z-index: 5;
 
@@ -55,41 +57,51 @@
 .about__slider__progress1{
     height: 5px;
     width: 0%;
-    background-color: black;
-    animation: progress 8s linear infinite;
+    background-color: #ffffff;
+    animation: progress 12s linear infinite;
 }
 
 .about__slider__progress2{
     height: 5px;
     width: 0%;
-    background-color: black;
-    animation: progress 8s linear infinite;
+    background-color: #ffffff;
+    animation: progress 12s linear infinite;
     animation-delay: 4s;
 }
 
+.about__slider__progress3{
+    height: 0;
+    width: 0%;
+    background-color: #ffffff;
+    animation: progress 12s linear infinite;
+    animation-delay: 8s;
+}
+// анимация прогресса
 @keyframes progress {
     0% {
         width: 0px;
     }
 
-    50% {
+    33% {
         width: 53px;
-        background-color: black;
+        background-color: #ffffff;
     }
 
-    51% {
+    34% {
         background-color: transparent;
     }
 
     100% {
-        width: 106px;
+        width: 54px;
         background-color: transparent
     }
 }
+//
 
+// анимация кругов
 .about__slider__circle::after {
     position: absolute;
-    display: inline-block;
+    display: block;
     box-sizing: border-box;
     content: '';
     width: 14px;
@@ -101,16 +113,56 @@
 
 .about__slider__circle::before {
     position: absolute;
-    display: inline-block;
+    display: block;
     box-sizing: border-box;
     content: '';
     width: 14px;
     height: 14px;
+    top: -5px;
     display: none;
     border-radius: 50%;
-    border: 1px solid #ffffff;
     background-color: #FFFFFF;
+
 }
+
+.p1::before {
+    top: -5px;
+    display: block;
+    background-color: transparent;
+    animation: cir 12s linear infinite;
+}
+
+.p2::before {
+    top: -5px;
+    display: block;
+    background-color: transparent;
+    animation: cir 12s linear infinite;
+    animation-delay: 4s;
+}
+
+.p3::before {
+    top: -5px;
+    display: block;
+    background-color: transparent;
+    animation: cir 12s linear infinite;
+    animation-delay: 8s;
+}
+
+@keyframes cir {
+    from { 
+        background-color: #FFFFFF;
+    }
+    33% {
+        background-color: #FFFFFF;
+    }
+    34% {
+        background-color: transparent;
+    }
+    to {
+        background-color: transparent;
+    }
+}
+// 
 
 .about__scroll {
     position: absolute;
