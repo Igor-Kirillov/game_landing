@@ -1,171 +1,186 @@
-
 .about__slide1 {
-    position: absolute;
-    top: 188px;
-    right: 270px;
-    z-index: 3;
+	position: absolute;
+	top: 188px;
+	right: 270px;
+	z-index: 3;
 }
 
 .about__slide2 {
-    position: absolute;
-    top: 210px;
-    right: 230px;
-    z-index: 2;
+	position: absolute;
+	top: 210px;
+	right: 230px;
+	z-index: 2;
 }
 
 .about__slide3 {
-    position: absolute;
-    top: 230px;
-    right: 185px;
-    z-index: 1;
+	position: absolute;
+	top: 230px;
+	right: 185px;
+	z-index: 1;
 }
 
 .about_line {
-    position: absolute;
-    top: 443px;
-    left: 120px;
-    background-color: #FFFFFF;
-    height: 3px;
-    width: 712px;
-    z-index: 4;
+	position: absolute;
+	top: 443px;
+	left: 120px;
+	// FIXME: белый цвет в переменные
+	background-color: #ffffff;
+	height: 3px;
+	width: 712px;
+	z-index: 4;
+}
+
+.about__underline {
+	position: relative;
+
+	&::after {
+		content: " ";
+		position: absolute;
+		right: 0;
+		left: 0;
+		bottom: 0;
+		z-index: -1;
+		background: #ffb548;
+		height: 6px;
+	}
 }
 
 .about__slide__foto {
-    background: #FFFFFF;
-    border-radius: 6.33344px;
+	background: #ffffff;
+	// FIXME: в идеале пиксель не делится)
+	border-radius: 6.33344px;
 }
-.about__slider{
-    position: absolute;
-    display: flex;
-    justify-content: flex-end;
-    right: 371px;
-    top: 759px;
-    z-index: 5;
+.about__slider {
+	position: absolute;
+	display: flex;
+	justify-content: flex-end;
+	right: 371px;
+	top: 759px;
+	z-index: 5;
 
-    &__circle {
-        position: relative;
-    }
+	&__circle {
+		position: relative;
+	}
 
-    &__progress {
-        height: 5px;
-        width: 53px;
-        margin-left: 13px;
-        background-color: transparent;   
-    }
-}
-
-.about__slider__progress1{
-    height: 5px;
-    width: 0%;
-    background-color: #ffffff;
-    animation: progress 12s linear infinite;
+	&__progress {
+		height: 5px;
+		width: 53px;
+		margin-left: 13px;
+		background-color: transparent;
+	}
 }
 
-.about__slider__progress2{
-    height: 5px;
-    width: 0%;
-    background-color: #ffffff;
-    animation: progress 12s linear infinite;
-    animation-delay: 4s;
+.about__slider__progress1 {
+	height: 5px;
+	width: 0%;
+	background-color: #ffffff;
+	animation: progress 12s linear infinite;
 }
 
-.about__slider__progress3{
-    height: 0;
-    width: 0%;
-    background-color: #ffffff;
-    animation: progress 12s linear infinite;
-    animation-delay: 8s;
+.about__slider__progress2 {
+	height: 5px;
+	width: 0%;
+	background-color: #ffffff;
+	animation: progress 12s linear infinite;
+	animation-delay: 4s;
+}
+
+.about__slider__progress3 {
+	height: 0;
+	width: 0%;
+	background-color: #ffffff;
+	animation: progress 12s linear infinite;
+	animation-delay: 8s;
 }
 // анимация прогресса
 @keyframes progress {
-    0% {
-        width: 0px;
-    }
+	0% {
+		width: 0px;
+	}
 
-    33% {
-        width: 53px;
-        background-color: #ffffff;
-    }
+	33% {
+		width: 53px;
+		background-color: #ffffff;
+	}
 
-    34% {
-        background-color: transparent;
-    }
+	34% {
+		background-color: transparent;
+	}
 
-    100% {
-        width: 54px;
-        background-color: transparent
-    }
+	100% {
+		width: 54px;
+		background-color: transparent;
+	}
 }
 //
 
 // анимация кругов
 .about__slider__circle::after {
-    position: absolute;
-    display: block;
-    box-sizing: border-box;
-    content: '';
-    width: 14px;
-    height: 14px;
-    top: -5px;
-    border-radius: 50%;
-    border: 1px solid #ffffff;
+	position: absolute;
+	display: block;
+	box-sizing: border-box;
+	content: "";
+	width: 14px;
+	height: 14px;
+	top: -5px;
+	border-radius: 50%;
+	border: 1px solid #ffffff;
 }
 
 .about__slider__circle::before {
-    position: absolute;
-    display: block;
-    box-sizing: border-box;
-    content: '';
-    width: 14px;
-    height: 14px;
-    top: -5px;
-    display: none;
-    border-radius: 50%;
-    background-color: #FFFFFF;
-
+	position: absolute;
+	display: block;
+	box-sizing: border-box;
+	content: "";
+	width: 14px;
+	height: 14px;
+	top: -5px;
+	display: none;
+	border-radius: 50%;
+	background-color: #ffffff;
 }
 
 .p1::before {
-    top: -5px;
-    display: block;
-    background-color: transparent;
-    animation: cir 12s linear infinite;
+	top: -5px;
+	display: block;
+	background-color: transparent;
+	animation: cir 12s linear infinite;
 }
 
 .p2::before {
-    top: -5px;
-    display: block;
-    background-color: transparent;
-    animation: cir 12s linear infinite;
-    animation-delay: 4s;
+	top: -5px;
+	display: block;
+	background-color: transparent;
+	animation: cir 12s linear infinite;
+	animation-delay: 4s;
 }
 
 .p3::before {
-    top: -5px;
-    display: block;
-    background-color: transparent;
-    animation: cir 12s linear infinite;
-    animation-delay: 8s;
+	top: -5px;
+	display: block;
+	background-color: transparent;
+	animation: cir 12s linear infinite;
+	animation-delay: 8s;
 }
 
 @keyframes cir {
-    from { 
-        background-color: #FFFFFF;
-    }
-    33% {
-        background-color: #FFFFFF;
-    }
-    34% {
-        background-color: transparent;
-    }
-    to {
-        background-color: transparent;
-    }
+	from {
+		background-color: #ffffff;
+	}
+	33% {
+		background-color: #ffffff;
+	}
+	34% {
+		background-color: transparent;
+	}
+	to {
+		background-color: transparent;
+	}
 }
-// 
+//
 
 .about__scroll {
-    position: absolute;
-    top: 475px;
-    right: 134px;
+	position: absolute;
+	top: 475px;
+	right: 134px;
 }
