@@ -1,76 +1,76 @@
 .quotes {
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .quotes__main {
-    display: flex;
-    flex-direction: column;
-    gap: 56px;
+	display: flex;
+	flex-direction: column;
+	gap: 56px;
 }
 
 .quotes__cards {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 30px;
-    flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 30px;
+	flex-grow: 1;
 }
 
 .quotes__card {
-    width: 453px;
-    background: url(../../../images/dist/twitter_opasity.svg) no-repeat,
-                url(../../../images/dist/ellipse__orange.svg) no-repeat;
-    background-color:  rgba(255, 255, 255, 0.08);
-    background-position: 415px 31px, 23px 16px;
-    border-radius: 10px;
-    padding: 27px 30px 22px 17px;
+	width: 453px;
+	background: url(../../../images/dist/twitter_opasity.svg) no-repeat,
+		url(../../../images/dist/ellipse__orange.svg) no-repeat;
+	background-color: rgba(255, 255, 255, 0.08);
+	background-position: 415px 31px, 23px 16px;
+	border-radius: 10px;
+	padding: 27px 30px 22px 17px;
 
-    &--medium {
-        margin-right: 145px;
-    }
+	&--medium {
+		margin-right: 145px;
+	}
 
-    &--lower {
-        margin-right: 38px;
-    }
+	&--lower {
+		margin-right: 38px;
+	}
 }
 
-.quotes__card__title  {
-    position: relative;
-    padding-left: 92px;
-    margin-bottom: 20px;
+.quotes__card__title {
+	position: relative;
+	padding-left: 92px;
+	margin-bottom: 20px;
 }
 
 // аватарки
 
 .quotes__card__title::after {
-    content: '';
-    position: absolute;
-    display: inline-block;
-    width: 65px;
-    height: 65px;
-    top: -15px;
-    left: -5px;
-    border-radius: 50%
+	content: "";
+	position: absolute;
+	display: inline-block;
+	width: 65px;
+	height: 65px;
+	top: -15px;
+	left: -5px;
+	border-radius: 50%;
 }
 .quotes__card__title--foto1::after {
-    background: url(../../../images/dist/ava1.jpg);
+	background: url(../../../images/dist/ava1.jpg);
 }
 .quotes__card__title--foto2::after {
-    background: url(../../../images/dist/ava2.jpg);
+	background: url(../../../images/dist/ava2.jpg);
 }
 .quotes__card__title--foto3::after {
-    background: url(../../../images/dist/ava3.jpg);
+	background: url(../../../images/dist/ava3.jpg);
 }
 
 // аватарки
 
 .quotes__quote {
-    .fontsize (18px, 400, 25px);
-    margin-bottom: 9px;
+	.fontsize (18px, 400, 25px);
+	margin-bottom: 9px;
 }
 
 .quotes__date {
-    .fontsize (14px, 400, 19px);
-    opacity: 0.5;
+	.fontsize (14px, 400, 19px);
+	opacity: 0.5;
 }
